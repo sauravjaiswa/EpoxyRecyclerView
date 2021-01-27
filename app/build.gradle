@@ -1,6 +1,9 @@
-plugins {
-    id 'com.android.application'
-    id 'kotlin-android'
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+kapt {
+    correctErrorTypes = true
 }
 
 android {
@@ -42,4 +45,8 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //Epoxy library
+    implementation 'com.airbnb.android:epoxy:4.3.1'
+    kapt 'com.airbnb.android:epoxy-processor:4.3.1'
 }
