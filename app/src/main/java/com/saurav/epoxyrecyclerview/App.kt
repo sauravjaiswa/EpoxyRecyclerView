@@ -1,4 +1,4 @@
-package com.saurav.epoxyrecyclerview.model
+package com.saurav.epoxyrecyclerview
 
 import android.app.Application
 import com.airbnb.epoxy.Carousel

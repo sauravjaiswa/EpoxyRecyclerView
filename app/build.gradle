@@ -33,6 +33,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -49,4 +52,5 @@ dependencies {
     //Epoxy library
     implementation 'com.airbnb.android:epoxy:4.3.1'
     kapt 'com.airbnb.android:epoxy-processor:4.3.1'
+    implementation 'com.airbnb.android:epoxy-databinding:3.8.0'
 }
